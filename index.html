@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rm: 99577</title>
     <link rel="stylesheet" href="./css/form.css">
+
+    <script src="./js/tarefas.js" defer>
+
+    </script>
 </head>
 
 <body>
-    <form action="">
+    <h1>MINHAS TAREFAS</h1>
 
-        Nome: <input id="txt1" type="text">
-        <button onclick="teste()">Enviar</button>
+    <div>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Cadastro de Tarefas</legend>
+                <div>
+                    <label for="">Nova Tarefa</label>
+                    <input type="text" name="tarefa" id="idTarefa" placeholder="Digite o nome da sua Tarefa">
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
-        <ul>
-            <li id="text"></li>
+    <div>
+        <ul id="lista-tarefa">
+            <li></li>
         </ul>
-
-    </form>
-
-    <script>
-        let x = document.getElementById("txt1")
-
-        function teste() {
-            document.getElementById("text").innerHTML = x.value
-        }
-    </script>
+    </div>
 </body>
 
 </html>

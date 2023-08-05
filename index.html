@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rm: 99577</title>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <form action="">
+
+        Nome: <input id="txt1" type="text">
+        <button onclick="teste()">Enviar</button>
+
+        <ul>
+            <li id="text"></li>
+        </ul>
+
+    </form>
+
+    <script>
+        let x = document.getElementById("txt1")
+
+        function teste() {
+            document.getElementById("text").innerHTML = x.value
+        }
+    </script>
+</body>
+
+</html>

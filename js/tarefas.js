@@ -25,6 +25,21 @@ botaoAddTarefa.addEventListener("click", (evento)=>{
 
     botaoApagaTarefa.addEventListener("click", (e)=>{
 
+        let conteudoTarefa = listaTarefasArray.indexOf
+
+
+        // let indiceTarefa = listaTarefasArray.indexOf(conteudoTarefa);
+
+        listaTarefasArray.map( (tarefa, index)  => {
+
+            if(tarefa == conteudoTarefa) {
+                listaTarefasArray.splice(index, 1);
+            }
+
+        });
+
+
+
         e.target.parentNode.remove()
 
         listaTarefasArray.forEach(tarefa=>{
